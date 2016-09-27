@@ -13,6 +13,11 @@ class Converter
             $input -= 10;
         }
 
+        if (9 <= $input) {
+            $output .= 'IX';
+            $input -= 9;
+        }
+
         if (5 <= $input) {
             $output .= 'V';
             $input -= 5;
