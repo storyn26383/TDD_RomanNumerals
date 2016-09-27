@@ -18,6 +18,11 @@ class Converter
             $input -= 5;
         }
 
+        if (4 <= $input) {
+            $output .= 'IV';
+            $input -= 4;
+        }
+
         return $output . str_repeat('I', $input);
     }
 }
