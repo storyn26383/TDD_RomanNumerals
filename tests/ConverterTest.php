@@ -41,8 +41,8 @@ class ConverterTest extends TestCase
         $this->assertEquals('V', Converter::convert(5));
     }
 
-    // public function testConvert6()
-    // {
-    //     $this->assertEquals('VI', Converter::convert(6));
-    // }
+    public function testConvert6()
+    {
+        $this->assertEquals('VI', Converter::convert(6));
+    }
 }

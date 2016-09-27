@@ -8,7 +8,7 @@ class Converter
     {
         $output = '';
 
-        if (5 === $input) {
+        if (5 <= $input) {
             $output = 'V';
             $input -= 5;
         }
