@@ -90,4 +90,14 @@ class ConverterTest extends TestCase
     {
         $this->assertEquals('M', Converter::convert(1000));
     }
+
+    public function testConvert1999()
+    {
+        $this->assertEquals('MCMXCIX', Converter::convert(1999));
+    }
+
+    public function testConvert4990()
+    {
+        $this->assertEquals('MMMMCMXC', Converter::convert(4990));
+    }
 }
