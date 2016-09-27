@@ -6,10 +6,13 @@ class Converter
 {
     public static function convert($input)
     {
+        $output = '';
+
         if (5 === $input) {
-            return 'V';
+            $output = 'V';
+            $input -= 5;
         }
 
-        return str_repeat('I', $input);
+        return $output . str_repeat('I', $input);
     }
 }
