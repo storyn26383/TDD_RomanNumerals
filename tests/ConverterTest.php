@@ -70,4 +70,24 @@ class ConverterTest extends TestCase
     {
         $this->assertEquals('IX', Converter::convert(9));
     }
+
+    public function testConvert50()
+    {
+        $this->assertEquals('L', Converter::convert(50));
+    }
+
+    public function testConvert100()
+    {
+        $this->assertEquals('C', Converter::convert(100));
+    }
+
+    public function testConvert500()
+    {
+        $this->assertEquals('D', Converter::convert(500));
+    }
+
+    public function testConvert1000()
+    {
+        $this->assertEquals('M', Converter::convert(1000));
+    }
 }
