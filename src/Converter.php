@@ -13,17 +13,17 @@ class Converter
             $input -= 10;
         }
 
-        if (9 <= $input) {
+        while (9 <= $input) {
             $output .= 'IX';
             $input -= 9;
         }
 
-        if (5 <= $input) {
+        while (5 <= $input) {
             $output .= 'V';
             $input -= 5;
         }
 
-        if (4 <= $input) {
+        while (4 <= $input) {
             $output .= 'IV';
             $input -= 4;
         }
