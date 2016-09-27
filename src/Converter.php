@@ -8,13 +8,13 @@ class Converter
     {
         $output = '';
 
-        if (10 <= $input) {
-            $output = 'X';
+        while (10 <= $input) {
+            $output .= 'X';
             $input -= 10;
         }
 
         if (5 <= $input) {
-            $output = 'V';
+            $output .= 'V';
             $input -= 5;
         }
 
