@@ -4,35 +4,24 @@ namespace RomanNumerals;
 
 class Converter
 {
+    protected static $maps = [
+        10 => 'X',
+        9 => 'IX',
+        5 => 'V',
+        4 => 'IV',
+        1 => 'I',
+    ];
+
     public static function convert($input)
     {
         $output = '';
 
-        while (10 <= $input) {
-            $output .= 'X';
-            $input -= 10;
+        foreach (static::$maps as $value => $symbol) {
+            while ($value <= $input) {
+                $output .= $symbol;
+                $input -= $value;
+            }
         }
-
-        while (9 <= $input) {
-            $output .= 'IX';
-            $input -= 9;
-        }
-
-        while (5 <= $input) {
-            $output .= 'V';
-            $input -= 5;
-        }
-
-        while (4 <= $input) {
-            $output .= 'IV';
-            $input -= 4;
-        }
-
-        while (1 <= $input) {
-            $output .= 'I';
-            $input -= 1;
-        }
-
 
         return $output;
     }
