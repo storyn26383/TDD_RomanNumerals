@@ -6,6 +6,6 @@ class Converter
 {
     public static function convert($input)
     {
-        return 'I';
+        return str_repeat('I', $input);
     }
 }

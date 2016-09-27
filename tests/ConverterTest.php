@@ -30,4 +30,9 @@ class ConverterTest extends TestCase
     {
         $this->assertEquals('I', Converter::convert(1));
     }
+
+    public function testConvert2()
+    {
+        $this->assertEquals('II', Converter::convert(2));
+    }
 }
