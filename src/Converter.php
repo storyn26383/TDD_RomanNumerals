@@ -28,6 +28,12 @@ class Converter
             $input -= 4;
         }
 
-        return $output . str_repeat('I', $input);
+        while (1 <= $input) {
+            $output .= 'I';
+            $input -= 1;
+        }
+
+
+        return $output;
     }
 }
